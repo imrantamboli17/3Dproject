@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More 3D Designs - 3D WORLD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #082567;
+      --accent: #f39c12;
+      --bg: #f4f4f4;
+      --text: #333;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.7rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    a.back:hover {
+      background: #e67e22;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>More 3D Designs</h1>
+  </header>
+
+  <main>
+    <h2>Explore Our Additional Designs</h2>
+    <div class="gallery-grid">
+      <img src="/1.jpg" alt="Design 1" />
+      <img src="/2.jpg" alt="Design 2" />
+      <img src="/3.jpg" alt="Design 3" />
+      <img src="/4.jpg" alt="Design 4" />
+      <img src="/5.jpg" alt="Design 5" />
+      <img src="/6.jpg" alt="Design 6" />
+      <img src="/7.jpg" alt="Design 7">
+      <img src="/8.jpg" alt="Design 8">
+      <img src="/9.jpg" alt="Design 9">
+      <img src="/10.jpg" alt="Design 10">
+    </div>
+    <a href="index.html" class="back">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>Contact: 8999954374 </p>
+    <p>&copy; 2025 3D WORLD – All rights reserved.</p>
+  </footer>
+</body>
+</html>
