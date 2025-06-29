@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D WORLD - Civil & 3D Design Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #082567;
+      --accent: #f39c12;
+      --bg: #f4f4f4;
+      --text: #333;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+    header img.logo {
+      width: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .poster {
+      text-align: center;
+      margin: 2rem 0;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .poster img {
+      max-width: 95%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .services {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .services h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      animation: slideDown 1s ease-in-out;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-item {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      animation: zoomIn 0.8s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+    .service-item h3 {
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .gallery {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    .gallery h2 {
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      animation: slideDown 1s ease-in-out;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease;
+    }
+    /* Show‑More Button */
+    .show-more-btn {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .show-more-btn:hover {
+      background: #e67e22;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- <img src="logo/your-logo.png" alt="3D World Logo" class="logo" /> -->
+    <h1>3D WORLD</h1>
+    <p>घर बांधण्यापूर्वी अनुभव – 3D डिझाईनच्या मदतीने!</p>
+  </header>
+
+  <section class="poster">
+    <img src="/IMG_20250121_104901[1].jpg" alt="3D World Poster" />
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <h3>2D Plan</h3>
+        <p>Professional and accurate floor planning.</p>
+      </div>
+      <div class="service-item">
+        <h3>3D Design</h3>
+        <p>High-quality 3D views before construction starts.</p>
+      </div>
+      <div class="service-item">
+        <h3>Interior Design</h3>
+        <p>Custom interior concepts for modern living.</p>
+      </div>
+      <div class="service-item">
+        <h3>Centerline Plan</h3>
+        <p>Essential layout for foundation and columns.</p>
+      </div>
+      <div class="service-item">
+        <h3>Cut View</h3>
+        <p>Detailed section cut views for clarity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Design Gallery</h2>
+    <div class="gallery-grid">
+      <img src="/1.jpg" alt="Design 1" />
+      <img src="/2.jpg" alt="Design 2" />
+      <img src="/3.jpg" alt="Design 3" />
+      <img src="/4.jpg" alt="Design 4" />
+    </div>
+
+    <!-- More Designs Button -->
+    <div style="margin-top: 2rem;">
+      <a href="more-designs.html" class="show-more-btn">View More Designs</a>
+    </div>
+
+  </section>
+
+
+   <section class="gallery">
+    <h2>2D Gallery</h2>
+    <div class="gallery-grid">
+      <img src="/2D/1.jpg" alt="Design 1" />
+      <img src="/2D/2.jpg" alt="Design 2" />
+      <img src="/2D/3.jpg" alt="Design 3" />
+      <img src="/2D/4.jpg" alt="Design 4" />
+    </div>
+
+    <!-- More Designs Button -->
+    <div style="margin-top: 2rem;">
+      <a href="2D-more-designs.html" class="show-more-btn">View More Designs</a>
+    </div>
+
+  </section>
+
+   <section class="gallery">
+    <h2>Cut views</h2>
+    <div class="gallery-grid">
+      <img src="/cut_view/1.jpg" alt="Design 1" />
+      <img src="/cut_view/2.jpg" alt="Design 2" />
+  
+    </div>
+
+    <!-- More Designs Button
+    <div style="margin-top: 2rem;">
+      <a href="2D-more-designs.html" class="show-more-btn">View More Designs</a>
+    </div> -->
+
+  </section>
+
+
+  <footer>
+    <p>Contact: 8999954374 </p>
+    <p>&copy; 2025 3D WORLD – All rights reserved.</p>
+  </footer>
+
+  <!-- Toggle script -->
+  <script>
+    function toggleMoreDesigns() {
+      const moreSection = document.getElementById("more-designs");
+      const btn = document.querySelector(".show-more-btn");
+      if (moreSection.style.display === "none") {
+        moreSection.style.display = "block";
+        btn.textContent = "Show Less Designs";
+      } else {
+        moreSection.style.display = "none";
+        btn.textContent = "View More Designs";
+      }
+    }
+  </script>
+</body>
+</html>
